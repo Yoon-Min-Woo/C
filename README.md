@@ -5,6 +5,8 @@ C+
 
 최대 최초값
 
+
+#include <stdio.h>
 void main()
 {
       int max, i, min:++
@@ -26,6 +28,7 @@ void main()
 
 ********************************************************************************************
 
+#include <stdio.h>
 void main()
 {
       int max, i, min:
