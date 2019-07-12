@@ -1,4 +1,4 @@
-# C
+# C 언어    겁나 어려움 뭐라는지 1도 모르겠음
 
 
 C+
@@ -238,3 +238,61 @@ void main()
 	printf("홀수합=%d\n", s1);
 	printf("짝수함=%d\n", s2);
 }
+
+
+**********************************************************************
+
+다이아몬드
+
+#include <stdio.h>
+int main()
+{
+	int column = 5;
+	int row = column;
+	
+	for (int i = 1; i <= column; i++)
+	{
+		for (int j = row - i; j > 0; j--)
+		{
+			printf("0");
+		}
+		for (int k = 0; k < i; k++)
+		{
+			printf("*");
+		}
+		for (int k = 0; k < i-1; k++)
+		{
+			printf("*");
+		}
+		for (int j = (row - i); j > 0; j--)
+		{
+			printf("0");
+		}
+		printf("\n");
+	}
+	for (int i=1;i <= column-1;i++)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			printf("0");
+		}
+		for (int k = (row - i); k > 1; k--)
+		{
+			printf("*");
+		}
+		for (int k = i; k < row; k++)
+		{
+			printf("*");
+		}
+		for (int j = 0; j < i; j++)
+		{
+			printf("0");
+		}
+		printf("\n");
+	}
+	
+}
+
+
+
+********************************************************************
